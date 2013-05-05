@@ -1,0 +1,16 @@
+* From bilaga_a.pdf
+IGC0024B  TITLE 'ZWEI VIER ZWEI'                                        00000020
+IGC00242  CSECT                                                         00000100
+          LR     12,6                                                   00000200
+          USING  IGC00242,12                                            00000300
+          L      2,X'6C'(7)                                             00000310
+          L      2,180(4)                                               00000400
+          BCT    0,AUTHOFF                                              00000500
+AUTHON    EQU    *                                                      00000600
+          OI     236(2),X'01'                                           00000700
+          B      RETURN                                                 00000800
+AUTHOFF   EQU    *                                                      00000900
+          NI     236(2),X'FE'                                           00001000
+RETURN    EQU    *                                                      00001100
+          BR     14                                                     00001200
+          END    IGC00242                                               00001300
