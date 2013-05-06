@@ -16,7 +16,7 @@ I decided to document these files here due to the historical nature of the breac
 
 **Ha.C**: A C program used to escalate privileges to the UID/GID supplied in the script. It is assumed this program would be run with an appropriate setuid. 
 
-**kuku.rx**: A REXX script which exploits a previously unknown vulnerability in CNMEUNIX (a program in OMVS with setuid). **this code is only a snippet as that is all that is available**.
+**kuku.rx**: A REXX script which exploits a previously unknown 0-Day vulnerability in CNMEUNIX (a program in OMVS with setuid). The script uses CNMEUNIX to locally escalate privileges to superuser (aka root) access in OMVS. **This code is only a snippet as that is all that is available**.
 
 **nop.jcl**: A JCL file which "does nothing" ;)
 
