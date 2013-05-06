@@ -26,6 +26,6 @@ I decided to document these files here due to the historical nature of the breac
 
 **utcam.sh**: BASH script which when run send commands to a remote listening web server. 
 
-**vc242**: I have no idea. 
+**vc242**: Turns on and off the JSCBAUTH bit depending on the contents of Register 0. (thanks @BarrySchrager1)
 
 
