@@ -1,6 +1,6 @@
 /* REXX */
 /* from fup.pdf 
-   this file was incomplete these are the only snipped that exist */
+   this file was incomplete, these are the only snippets that exist */
 call syscall 'ON'
 if __argv.2=='kuku' then do
 	address syscall 'setuid 0'
