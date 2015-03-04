@@ -28,4 +28,4 @@ I decided to document these files here due to the historical nature of the breac
 
 **vc242**: Turns on and off the JSCBAUTH bit depending on the contents of Register 0. (thanks @BarrySchrager1)
 
-
+**DeFeNeStRaTe.C**: z/OS OMVS local exploit for APF authorized load module IOELMD10
