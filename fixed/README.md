@@ -6,8 +6,9 @@ they work. The purpose of this is for learning and historical reasons.
 
 ## DeFeNeStRaTe.C
 
-This program was barely changed:
-'''
+This program was barely changed from it original. XLC complained about
+the line below. Replaced with a standard if/else statement instead.
+```
 /* Changed by SOF 
 PathName = (memcmp(environ[0], "PAYLOAD=", 8) == 0)? strdup(VICTIM) : argv[0]; 
 */
@@ -16,7 +17,7 @@ if(memcmp(environ[0], "PAYLOAD=", 8) == 0) {
 } else {
   PathName = argv[0];
 }
-'''
+```
 
 ## tinyd.c
 
