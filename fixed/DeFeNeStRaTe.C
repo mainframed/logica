@@ -55,7 +55,7 @@
 #define SVC(X) 0x0a,((X)&0xff)
 
 #define BranchAndLinkReg(X,Y) INS_RR(0x05, (X), (Y) )
-#define BranchAndStackReg(X,Y) INS_RR(0x0D, (X), (Y) )
+#define BranchAndSaveReg(X,Y) INS_RR(0x0D, (X), (Y) )
 
 #define BranchRelativeAndSave(X,Y) 0xa7,( (( (X)&0xf )<<4)|5),(((Y)>>8)&0xff),((Y)&0xff)
 
