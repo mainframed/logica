@@ -2,16 +2,10 @@
 
 This program is used to demonstrate DeFeNeStRaTe.C and tinyd.c.
 To use this program you must:
- 1) Create an HFS/ZFS dataset 
-  - use ishell option "File_systems" to create the HFS/ZFS
- 2) Add that dataset to APF libraries
-  - in sdsf "/setprog apf,add,dsname=<HFS/ZFS dataset name>,volume=<ZFS/HFS dataset volume>"
- 3) Mount that dataset using TSO MOUNT command
-  - MOUNT filesystem('<HFS dataset>') MOUNTPOINT('/APF') TYPE(<HFS or ZFS>)
- 4) Give your user account the ability to make APF authorized omvs programs using RACF commands in TSO
-  - RDEFINE FACILITY BPX.FILEATTR.APF UACC(NONE)
-  - PERMIT BPX.FILEATTR.APF CLASS(FACILITY) ID(<your userid>) ACCESS(READ)
-  - SETROPTS RACLIST(FACILITY) REFRESH
+--> Give your user account the ability to make APF authorized omvs programs using RACF commands in TSO
+     - RDEFINE FACILITY BPX.FILEATTR.APF UACC(NONE)
+     - PERMIT BPX.FILEATTR.APF CLASS(FACILITY) ID(<your userid>) ACCESS(READ)
+     - SETROPTS RACLIST(FACILITY) REFRESH
 
 Once you've done all that you can compile and set tst APF authorized with:
  xlc -Wc,debug -Wl,AC=1 -o tst tst.c; extattr +a ./tst
